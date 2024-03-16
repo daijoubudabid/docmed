@@ -1,0 +1,59 @@
+.service-container{
+  background: #83C4FF;
+  color: white;
+}
+
+.service, .service-2{
+  padding: 40px 0;
+}
+.service h3{
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+.service p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.service-2{
+  background-color: #5DB2FF;
+}
+.service-2 h3{
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+.service-2 p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.service-btn{
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 9px 24px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.service-btn:hover{
+  background: white;
+  border: none;
+  color: #5DB2FF;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+@media (min-width: 765px) and (max-width: 990px){
+  .service h3{
+    font-size: 22px;
+  }
+  .service-2 h3{
+    font-size: 22px;
+  }
+  .service-btn{
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

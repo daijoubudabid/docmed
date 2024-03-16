@@ -1,0 +1,84 @@
+footer {
+  padding-top: 145px;
+  padding-bottom: 129px;
+  background-color: #1f1f1f;
+
+  .footer-logo {
+    p {
+      color: #bababa;
+      padding: 45px 0px 20px 0px;
+      line-height: 28px;
+    }
+  }
+
+  .footer-icons {
+    .icons {
+      background-color: #707070;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        .f-icon {
+          color: white;
+        }
+      }
+    }
+    .f-icon {
+      color: #bababa;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .footer-title {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-wrap: nowrap;
+  }
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-top: 15px;
+      a {
+        text-decoration: none;
+        color: #bababa;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #5db2f1;
+        }
+      }
+    }
+    p {
+      color: #bababa;
+      text-wrap: nowrap;
+    }
+  }
+}
+
+.copyright {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  p {
+    color: #919191;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  a {
+    color: #5db2ff;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}

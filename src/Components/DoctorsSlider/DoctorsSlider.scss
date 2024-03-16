@@ -1,0 +1,94 @@
+
+.title {
+  margin-top: 260px;
+  padding-bottom: 40px;
+
+  h3 {
+    font-size: 36px;
+    
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+
+    button {
+      border: 1px solid #eeeeee;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      color: gray;
+      font-size: 18px;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #5db2ff;
+        color: white;
+      }
+    }
+  }
+}
+
+.doctor-card {
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  user-select: none;
+
+  &:active{
+    cursor: grabbing;
+  }
+
+  .doctor-image {
+    overflow: hidden;
+  }
+  .image {
+    transition: transform 0.3s;
+  }
+
+  .doctor-info {
+    background-color: #f5fbff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    .doctor-name {
+      font-size: 20px;
+      color: #1f1f1f;
+      transition: all 0.3s ease-in-out;
+    }
+    .doctor-prof {
+      font-size: 13px;
+      color: gray;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    .doctor-info {
+      background-color: #5db2ff;
+      transition: all 0.3s ease-in-out;
+    }
+    .doctor-name {
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+    .doctor-prof {
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+    .image {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.doctors{
+  margin: 100px 0px;
+  margin-inline: auto;
+}

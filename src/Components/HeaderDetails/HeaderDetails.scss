@@ -1,0 +1,27 @@
+.main {
+  background-color: #f5fbff;
+}
+
+.icon1, .icon2, .icon3 {
+  color: #c7c7c7;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon3 {
+  font-size: 20px;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover {
+  color: #009dff;
+}
+
+.text {
+  color: #919191;
+  font-size: 13px;
+}
+
+.right-icon {
+  color: #009dff;
+}

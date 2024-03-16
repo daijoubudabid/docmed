@@ -1,0 +1,87 @@
+.banner-one,
+.banner-two {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60svh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to right,
+      #5db2ff 0%,
+      #65b4f9 24%,
+      rgba(124, 185, 233, 0) 96%,
+      rgba(125, 185, 232, 0) 100%
+    );
+  }
+
+  .breadcrumb-container {
+    position: relative;
+
+    h3 {
+      font-size: 50px;
+      color: white;
+      font-weight: 600;
+      line-height: 40px;
+    }
+  }
+
+  .bread-crumb-items {
+    color: white;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "/";
+      color: white;
+      margin-top: 3px;
+    }
+  }
+}
+
+.banner-one {
+  background: url("../../assets/breadCrumb-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner-two {
+  background: url("../../assets/breadCrumb-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// Responsive Styles
+
+@media (max-width: 768px) {
+  .banner-one,
+  .banner-two {
+    height: 45svh;
+
+    .breadcrumb-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.main-f-banner {
+  margin-top: 100px;
+}
+
+.f-banner-1 {
+  background: url("../../assets/17_emergency-1.png");
+  height: 37vh;
+}
+
+.f-banner-2 {
+  background: url("../../assets/21_emergency-2.png");
+  height: 37vh;
+}
+
+.emergency {
+  padding: 91px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .info {
+    h3 {
+      font-size: 20px;
+      color: white;
+    }
+    p {
+      color: white;
+      font-size: 14px;
+    }
+  }
+  .info-btn {
+    button {
+      color: white;
+      background: transparent;
+      padding: 9px 24px;
+      border-radius: 50px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #5db2ff;
+        background-color: white;
+      }
+    }
+  }
+}
+.overlay {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #5db2ff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
+
+// responsive part
+
+@media (max-width: 768px) {
+  .emergency {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    .info {
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .emergency {
+    display: flex;
+
+    .info {
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .emergency {
+    .info {
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
+}

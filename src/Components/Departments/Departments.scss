@@ -1,0 +1,80 @@
+.main-card {
+  background: #f5fbff;
+  padding-bottom: 100px;
+}
+
+.department-title {
+  padding-top: 120px;
+
+  h3 {
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 48%;
+      top: 60px;
+      height: 3px;
+      width: 50px;
+      background: #5db2ff;
+    }
+  }
+  p {
+    color: #727272;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+}
+
+.department-card {
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.04);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease-in-out;
+  .card-body {
+    padding: 20px 30px;
+  }
+  .card-title {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+  }
+  .card-text {
+    font-size: 16px;
+    line-height: 28px;
+    color: #727272;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  .image-container {
+    overflow: hidden;
+  }
+
+  .zoom-image {
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    .card-title {
+      color: #5db2ff;
+      transition: all 0.3s ease-in-out;
+    }
+    .zoom-image {
+      transform: scale(1.2);
+    }
+    .learn-btn {
+      text-decoration: underline;
+    }
+  }
+  .learn-btn {
+    color: #5db2ff;
+    background-color: transparent;
+    border: none;
+  }
+}
